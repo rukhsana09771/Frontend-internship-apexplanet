@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Form</title>
+  <link rel="stylesheet" href="Task2.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <div class="overlay"></div>
+
+  <div class="contact-form-container">
+    <h2>Contact Us</h2>
+    <div id="form-message" class="hidden"></div>
+
+    <form class="contact-form" id="contactForm">
+      <div class="input-group">
+        <i class="fas fa-user"></i>
+        <input type="text" id="name" name="name" placeholder="Your name" required />
+      </div>
+
+      <div class="input-group">
+        <i class="fas fa-envelope"></i>
+        <input type="email" id="email" name="email" placeholder="Your email" required />
+      </div>
+
+      <div class="input-group">
+        <i class="fas fa-tag"></i>
+        <input type="text" id="subject" name="subject" placeholder="Subject" required />
+      </div>
+
+      <div class="input-group">
+        <i class="fas fa-comment"></i>
+        <textarea id="message" name="message" rows="5" placeholder="Your message" required></textarea>
+      </div>
+
+      <button type="submit"><i class="fas fa-paper-plane"></i> Send Message</button>
+    </form>
+  </div>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+  <script src="Task2.js"></script>
+</body>
+</html>
