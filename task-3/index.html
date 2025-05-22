@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastel Learning Hub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="navbar">
+    <div class="nav-content">
+        <a href="#" class="logo">
+            <i class="fas fa-cloud" style="color: var(--blue4);"></i>
+            THE LEARNING HUB
+        </a>
+        
+        <div class="nav-links">
+            <a href="#"><i class="fas fa-home"></i> Home</a>
+            <a href="#"><i class="fas fa-book-open"></i> Courses</a>
+            <a href="../Taks2/Task2.html"><i class="fas fa-envelope"></i> Contact</a>
+        </div>
+
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+            <i class="fas fa-ellipsis-v" id="menuIcon"></i>
+        </button>
+    </div>
+
+<div class="mobile-menu" id="mobileMenu">
+    <a href="#home"><i class="fas fa-home"></i> Home</a>
+    <a href="#courses"><i class="fas fa-book-open"></i> Courses</a>
+    <a href="../Taks2/Task2.html"><i class="fas fa-envelope"></i> Contact</a>
+</div>
+</nav>
+
+    <div class="container" id="home">
+        <main class="quiz-container">
+            <h1>Interactive Quiz</h1>
+            <div id="quiz"></div>
+            <div id="result"></div>
+        </main>
+
+        <aside class="api-container">
+            <h2>Daily Jokes</h2>
+            <button id="fetchJoke"><i class="fas fa-laugh-beam"></i> Get New Joke</button>
+            <div id="jokeContainer" class="joke-card"></div>
+        </aside>
+    </div>
+<!-- Add this section below the container div -->
+<section class="courses-section" id="courses">
+    <h2>Featured Courses</h2>
+    <div class="container">
+        
+        <div class="courses-grid">
+            <!-- Programming Card -->
+            <a href="#" class="course-card">
+                <div class="card-image">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1329/1329016.png" alt="Programming">
+                </div>
+                <div class="card-content">
+                    <h3>Programming Fundamentals</h3>
+                    <p>Master core concepts of Python, JavaScript, and Java with real-world projects and coding exercises</p>
+                    <div class="course-meta">
+                        <span><i class="fas fa-clock"></i> 8 Weeks</span>
+                        <span><i class="fas fa-user-graduate"></i> Beginner</span>
+                    </div>
+                    <button class="course-btn">Enroll Now</button>
+                </div>
+            </a>
+
+            <!-- Web Development Card -->
+            <a href="#" class="course-card">
+                <div class="card-image">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2282/2282188.png" alt="Web Development">
+                </div>
+                <div class="card-content">
+                    <h3>Web Development</h3>
+                    <p>Build responsive websites with HTML5, CSS3, and modern JavaScript frameworks</p>
+                    <div class="course-meta">
+                        <span><i class="fas fa-clock"></i> 10 Weeks</span>
+                        <span><i class="fas fa-user-graduate"></i> Intermediate</span>
+                    </div>
+                    <button class="course-btn">Enroll Now</button>
+                </div>
+            </a>
+
+            <!-- Data Science Card -->
+            <a href="#" class="course-card">
+                <div class="card-image">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2103/2103633.png" alt="Data Science">
+                </div>
+                <div class="card-content">
+                    <h3>Data Science</h3>
+                    <p>Learn data analysis, visualization, and machine learning with Python</p>
+                    <div class="course-meta">
+                        <span><i class="fas fa-clock"></i> 12 Weeks</span>
+                        <span><i class="fas fa-user-graduate"></i> Advanced</span>
+                    </div>
+                    <button class="course-btn">Enroll Now</button>
+                </div>
+            </a>
+
+            <!-- Mobile Development Card -->
+            <a href="#" class="course-card">
+                <div class="card-image">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2704/2704234.png" alt="Mobile Development">
+                </div>
+                <div class="card-content">
+                    <h3>Mobile Development</h3>
+                    <p>Create cross-platform mobile apps with React Native and Flutter</p>
+                    <div class="course-meta">
+                        <span><i class="fas fa-clock"></i> 10 Weeks</span>
+                        <span><i class="fas fa-user-graduate"></i> Intermediate</span>
+                    </div>
+                    <button class="course-btn">Enroll Now</button>
+                </div>
+            </a>
+
+            <!-- Cybersecurity Card -->
+            <a href="#" class="course-card">
+                <div class="card-image">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2933/2933245.png" alt="Cybersecurity">
+                </div>
+                <div class="card-content">
+                    <h3>Cybersecurity</h3>
+                    <p>Learn ethical hacking, network security, and threat analysis</p>
+                    <div class="course-meta">
+                        <span><i class="fas fa-clock"></i> 14 Weeks</span>
+                        <span><i class="fas fa-user-graduate"></i> Advanced</span>
+                    </div>
+                    <button class="course-btn">Enroll Now</button>
+                </div>
+            </a>
+
+            <!-- AI & ML Card -->
+            <a href="#" class="course-card">
+                <div class="card-image">
+                    <img src="https://cdn-icons-png.flaticon.com/512/4712/4712035.png" alt="Artificial Intelligence">
+                </div>
+                <div class="card-content">
+                    <h3>AI & Machine Learning</h3>
+                    <p>Explore neural networks, deep learning, and AI model development</p>
+                    <div class="course-meta">
+                        <span><i class="fas fa-clock"></i> 16 Weeks</span>
+                        <span><i class="fas fa-user-graduate"></i> Advanced</span>
+                    </div>
+                    <button class="course-btn">Enroll Now</button>
+                </div>
+            </a>
+        </div>
+        
+    </div>
+</section>
+
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3 class="footer-title">About Learning Hub</h3>
+                <p>Empowering learners with quality tech education through interactive courses, quizzes, and resources.</p>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section links mobile-hidden">
+                <h3 class="footer-title">Quick Links</h3>
+                <ul>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Home</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Courses</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section contact mobile-hidden">
+                <h3 class="footer-title">Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Learning Street, Tech City</p>
+                <p><i class="fas fa-envelope"></i> info@learninghub.com</p>
+                <p><i class="fas fa-phone"></i> +1 (234) 567-8900</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 The Learning Hub. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+    <script src="script.js"></script>
+</body>
+</html>
