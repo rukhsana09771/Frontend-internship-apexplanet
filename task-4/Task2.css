@@ -1,0 +1,122 @@
+/* Reset & base styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: url('https://images.unsplash.com/photo-1506765515384-028b60a970df?auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Glassmorphism effect */
+.contact-form-container {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    padding: 40px;
+    width: 90%;
+    max-width: 500px;
+    z-index: 2;
+    color: #fff;
+    text-align: center;
+}
+
+.contact-form-container h2 {
+    margin-bottom: 20px;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+/* Overlay for enhanced contrast */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.45);
+    z-index: 1;
+}
+
+/* Form and input styles */
+.contact-form {
+    z-index: 2;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+}
+
+.input-group i {
+    margin-right: 10px;
+    color: #fff;
+}
+
+.input-group input,
+.input-group textarea {
+    border: none;
+    background: transparent;
+    outline: none;
+    width: 100%;
+    color: #fff;
+    font-size: 16px;
+}
+
+::placeholder {
+    color: #e0e0e0;
+}
+
+/* Submit Button */
+button[type="submit"] {
+    background: #ffffff;
+    color: #4e54c8;
+    border: none;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background: #f1f1f1;
+}
+
+#form-message {
+    margin-bottom: 15px;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    display: none;
+}
+
+#form-message.visible {
+    display: block;
+}
+
+.success {
+    background-color: #28a745;
+    /* Green */
+    color: #fff;
+}
+
+.error {
+    background-color: #dc3545;
+    /* Red */
+    color: #fff;
+}

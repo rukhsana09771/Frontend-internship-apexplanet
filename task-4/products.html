@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Product Listing</title>
+  <link rel="stylesheet" href="products.css" />
+</head>
+<body>
+  <header>
+    <h1>📚 Rukhsana Store</h1>
+    <input type="text" id="searchInput" placeholder="Search products..." />
+  </header>
+
+  <section class="filters">
+    <button onclick="filterProducts('all')">All</button>
+    <button onclick="filterProducts('books')">Books</button>
+    <button onclick="filterProducts('electronics')">Electronics</button>
+    <button onclick="filterProducts('clothing')">Clothing</button>
+  </section>
+
+  <main id="productContainer" class="product-grid">
+    <!-- Dynamic products will appear here -->
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Rukhsana Store. All rights reserved.</p>
+  </footer>
+
+  <script src="products.js"></script>
+</body>
+</html>
